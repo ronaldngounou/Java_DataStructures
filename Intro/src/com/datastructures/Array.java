@@ -51,4 +51,25 @@ public class Array {
 
     }
 
+    public int indexOf(int item){
+        // If we find it, return the index
+        // Otherwise, return -1
+        for (int i=0; i<count; i++)
+            if (items[i] == item)
+                return i;
+        return -1;
+
+    }
+
+
+    public int max(){
+        int max = -1;
+        for (int i=0; i<count; i++){
+            if (items[i] > max)
+                max = items[i];
+        }
+        return max;
+    }
+
+
 }

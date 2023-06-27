@@ -16,7 +16,9 @@ public class Main {
         numbers.insert(40);
         numbers.insert(50);
         numbers.insert(20);
-        numbers.removeAt(2);
-        numbers.print();
+
+        System.out.println(numbers.indexOf(44));
+
+        System.out.println(numbers.max());
     }
 }
