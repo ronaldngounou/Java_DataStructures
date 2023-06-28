@@ -72,4 +72,48 @@ public class Array {
     }
 
 
+    public Array intersect(Array other){
+        var common = new Array(count);
+
+        for (int item : items)
+            if (other.indexOf(item)>=0)
+                common.insert(item);
+
+        return common;
+    }
+
+    public void reverse(){
+        int[] newItems = new int[count];
+        for (int i=0; i<count; i++){
+            newItems[i] = items[count-i-1];
+        }
+        items = newItems;
+    }
+
+    public void insertAt(int item, int index){
+        //Copy all the numbers before the index in a new array
+        if (index < 0 || index > count)
+            throw new IllegalArgumentException();
+
+        resizeIfRequired();
+        for (int i=count-1; i>=index; i--){
+            items[i+1] = items[i];
+        items[index] = item;
+        }
+
+        //Insert the index at a given position
+        //Copy all the numbers after the index
+    }
+    private void resizeIfRequired(){
+        if (items.length == count){
+            int [] newItems = new int[count*2];
+
+            for (int i =0; i<count;i++)
+                newItems[i] = items[i];
+
+            items = newItems;
+        }
+    }
+
+
 }
