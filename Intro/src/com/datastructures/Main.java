@@ -1,7 +1,6 @@
 package com.datastructures;
 
 import java.util.Arrays;
-import java.util.LinkedList;
 
 public class Main {
     public static void main( String[] args){
@@ -30,21 +29,30 @@ public class Main {
         common = numbers.intersect(others);
         common.print();
 
-        System.out.println("others");
+        //System.out.println("others");
         others.print();
-        System.out.println("others reversed");
+        //System.out.println("others reversed");
         others.reverse();
         others.print();
 
+
+        // LinkedList
         var list = new LinkedList();
         list.addLast(10);
         list.addLast(20);
         list.addLast(30);
+        list.addLast(60);
         list.addFirst(5);
-        System.out.println(list.indexOf(10));
+        System.out.println(list.indexOf(30));
+        System.out.println(list.contains(55));
         System.out.println(list.size());
+        list.removeFisrt();
+        System.out.println(list.size());
+
         var array = list.toArray();
         System.out.println(Arrays.toString(array));
+        list.removeLast();
+
 
     }
 }
