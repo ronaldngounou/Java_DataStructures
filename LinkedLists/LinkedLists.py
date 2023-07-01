@@ -1,15 +1,15 @@
-class Node:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-
 class LinkedList:
+    class Node:
+        def __init__(self, val=0, next=None):
+            self.val = val
+            self.next = next
+
     def __init__(self, head=None, tail=None):
         self.head = head 
         self.tail = tail 
 
     def addFirst(self, element):
-        node = Node(element)
+        node = self.Node(element)
         if (self.head == None):
             self.head = node 
             self.tail = node
@@ -18,13 +18,13 @@ class LinkedList:
             self.head = node 
     
     def addLast(self, element):
-        node = Node(element)
+        node = self.Node(element)
         if (self.head == None):
             self.tail = node 
             self.head = node
         else:
+            self.tail.next = node 
             self.tail = node 
-            node = self.tail 
 
     def indexOf(self, element):
         index = 0

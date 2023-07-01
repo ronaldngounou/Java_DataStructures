@@ -41,17 +41,27 @@ public class Main {
         list.addLast(10);
         list.addLast(20);
         list.addLast(30);
-        list.addLast(60);
-        list.addFirst(5);
-        System.out.println(list.indexOf(30));
-        System.out.println(list.contains(55));
-        System.out.println(list.size());
-        list.removeFisrt();
-        System.out.println(list.size());
+        list.addLast(40);
+        list.addLast(50);
+//        System.out.println(list.indexOf(30));
+//        System.out.println(list.contains(55));
+//        System.out.println(list.size());
+//        list.removeFisrt();
+//        System.out.println(list.size());
+        //list.reverse();
 
         var array = list.toArray();
         System.out.println(Arrays.toString(array));
-        list.removeLast();
+
+        // Find the Kth node from the end of linked list in one pass.
+        // [10 -> 20 -> 30 -> 40 -> 50]
+        //               *           *
+        // K = 1 (50)
+        // K = 2 (40)
+        // K = 3 (30)  (distance = 2) = k-1
+        System.out.println(list.getKthFromTheEnd(7));
+
+
 
 
     }

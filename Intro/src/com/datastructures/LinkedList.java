@@ -136,19 +136,50 @@ public class LinkedList {
 
     public void reverse(){
         // [10 -> 20 -> 30]
-        //  p     c     n
-        //  backup = c.next
-        //  c.next = p
+        // p  <-  c     n
+        // [10 <- 20 <- 30]
 
         var previous = head;
-        var c = head.next;
-        var n = c.next;
-        previous = c.next;
+        var current = head.next;
 
-        while(c !=null){
+        while(current !=null){
             var next = current.next;
-
+            current.next = previous;
+            previous = current;
+            current = next;
         }
+        tail = head;
+        tail.next = null;
+        head = previous;
+
     }
+
+    public int getKthFromTheEnd( int k){
+        // 1. Move the second pointer forward until it is at the right distance from the first pointer
+        // 2. Move both of them forward until the second pointer is at the end of the linked list
+        // 3. Return the value of the first pointer.
+
+        if (head==null) // If the list is empty
+            throw new IllegalStateException();
+
+        var first_pointer = head;
+        var second_pointer = head;
+
+        for (int i=0; i<k-1; i++) {//k-1 because the pointers are separated k-1 number of nodes.
+            second_pointer = second_pointer.next;
+            if (second_pointer == null){
+                throw new IllegalArgumentException();
+            }
+        }
+        while(second_pointer != tail){ //move both pointers until the second pointer reaches the last node.
+            first_pointer = first_pointer.next;
+            second_pointer = second_pointer.next;
+        }
+        return first_pointer.value;
+
+    }
+
+
+
 
 }

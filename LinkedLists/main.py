@@ -1,5 +1,5 @@
 from LinkedLists import *
-from Node import * 
+from Node import *
 
 l1 = LinkedList(Node(4))
 l1.addFirst(5)
