@@ -1,7 +1,6 @@
 package com.datastructures;
 
 import java.util.Arrays;
-import java.util.Stack;
 
 public class Main {
     public static void main( String[] args){
@@ -85,13 +84,27 @@ public class Main {
         var result = reverser.reverse(null);
         System.out.println(result);*/
 
-        String str = "(1+3]";
+        //String str = "(1+3]";
         // Edge cases
         // (
         // (()
         // ) (
-        Expression expression = new Expression();
-        System.out.println((expression.isBalanced(str)));
+        //Expression expression = new Expression();
+        //System.out.println((expression.isBalanced(str)));
+
+        Stack stack = new Stack();
+        stack.push(5);
+        stack.push(45);
+        stack.push(35);
+        stack.push(55);
+        //stack.pop();
+        System.out.println(stack.peek());
+        System.out.println(stack);
+
+
+
+
+
 
 
 
