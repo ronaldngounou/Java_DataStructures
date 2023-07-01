@@ -1,18 +1,19 @@
 package com.datastructures;
 
 import java.util.Arrays;
+import java.util.Stack;
 
 public class Main {
     public static void main( String[] args){
+
         /*int [] numbers = new int[3];
         numbers[0] = 10;
         int [] num = {3, 4, 7};
 
         System.out.println(Arrays.toString(numbers));
         System.out.println(num.length);*/
-
-
-        Array numbers = new Array(3);
+        // Linked Lists
+        /*Array numbers = new Array(3);
         numbers.insert(10);
         numbers.insert(40);
         numbers.insert(50);
@@ -64,7 +65,37 @@ public class Main {
         // K = 3 (30)  (distance = 2) = k-1
         System.out.println(list.getKthFromTheEnd(2));
 
-        System.out.println(list.hasLoop());
+        System.out.println(list.hasLoop());*/
+
+        // Stacks
+        /*Stack<Integer> stack = new Stack<>();
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        System.out.println(stack);
+        var top = stack.pop(); //removes the item on the top
+        System.out.println(stack);
+        top = stack.peek();
+        System.out.println(top);*/
+
+        // Write a code to reverse this string. Stacks are useful when I have to do something in reverse or going back.
+
+
+        /*StringReverser reverser = new StringReverser();
+        var result = reverser.reverse(null);
+        System.out.println(result);*/
+
+        String str = "(1+3]";
+        // Edge cases
+        // (
+        // (()
+        // ) (
+        Expression expression = new Expression();
+        System.out.println((expression.isBalanced(str)));
+
+
+
+
 
 
     }
