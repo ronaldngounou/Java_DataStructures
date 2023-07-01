@@ -134,4 +134,21 @@ public class LinkedList {
         return array;
     }
 
+    public void reverse(){
+        // [10 -> 20 -> 30]
+        //  p     c     n
+        //  backup = c.next
+        //  c.next = p
+
+        var previous = head;
+        var c = head.next;
+        var n = c.next;
+        previous = c.next;
+
+        while(c !=null){
+            var next = current.next;
+
+        }
+    }
+
 }
