@@ -179,6 +179,37 @@ public class LinkedList {
 
     }
 
+    public void printMiddle(){
+        var first_pointer = head;
+        var second_pointer = head;
+
+        if (head==null)
+            throw new IllegalStateException();
+
+        while(second_pointer != tail && second_pointer.next != tail){
+            second_pointer = second_pointer.next.next;
+            first_pointer = first_pointer.next;
+        }
+        if (second_pointer == tail)
+            System.out.println(first_pointer.value);
+        else
+            System.out.println(first_pointer.value + "," + first_pointer.next.value);
+    }
+
+    public boolean hasLoop(){
+        var slow = head;
+        var fast = head;
+
+        while(fast != null && fast.next!=null){
+            slow = slow.next;
+            fast = fast.next.next;
+
+            if (slow == fast)
+                return true;
+        }
+        return false;
+    }
+
 
 
 

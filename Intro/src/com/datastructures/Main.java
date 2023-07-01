@@ -43,13 +43,16 @@ public class Main {
         list.addLast(30);
         list.addLast(40);
         list.addLast(50);
+        list.addLast(60);
+
 //        System.out.println(list.indexOf(30));
 //        System.out.println(list.contains(55));
 //        System.out.println(list.size());
 //        list.removeFisrt();
 //        System.out.println(list.size());
         //list.reverse();
-
+        System.out.println("middle of the list:");
+        list.printMiddle();
         var array = list.toArray();
         System.out.println(Arrays.toString(array));
 
@@ -59,9 +62,9 @@ public class Main {
         // K = 1 (50)
         // K = 2 (40)
         // K = 3 (30)  (distance = 2) = k-1
-        System.out.println(list.getKthFromTheEnd(7));
+        System.out.println(list.getKthFromTheEnd(2));
 
-
+        System.out.println(list.hasLoop());
 
 
     }
