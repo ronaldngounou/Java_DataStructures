@@ -15,6 +15,7 @@ public class TwoStacks {
         count1 = -1;
         count2 = capacity;
     }
+
     public void push1(int item){
         if (isFull1())
             throw new IllegalStateException("Stack1 is full.");
@@ -34,24 +35,29 @@ public class TwoStacks {
             throw new IllegalStateException();
         return items[count1--];
     }
+
     public int pop2(){
         if (isEmpty2())
             throw new IllegalStateException();
         return items[count2++];
     }
+
     public boolean isEmpty1(){
         if (count1 != -1)
             return false;
         return true;
     }
+
     public boolean isEmpty2(){
         if (count2!=items.length)
             return false;
         return true;
     }
+
     public boolean isFull1(){
         return count1+1 == count2;
     }
+
     public boolean isFull2(){
         return count2-1 == count1;
     }

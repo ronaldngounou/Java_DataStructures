@@ -1,6 +1,7 @@
 package com.datastructures;
 
-import java.util.Arrays;
+import java.util.*;
+import java.util.Stack;
 
 public class Main {
     public static void main( String[] args){
@@ -120,14 +121,82 @@ public class Main {
 
         // MinStack
 
-        MinStack minstack = new MinStack();
+        /*MinStack minstack = new MinStack();
         minstack.push(3);
         minstack.push(6);
         minstack.push(9);
 
-        System.out.println(minstack);
+        System.out.println(minstack);*/
+
+        // Intro queues + Popular interview question
+        /*Queue<Integer> queue = new ArrayDeque<>();
+        queue.add(10);
+        queue.add(20);
+        queue.add(30);*/
+        // Reversing a queue - Popular interview question.
+
+        //reverse(queue);
+        // System.out.println(queue);
+
+        // Popular interview question - Implement a queue using an array to store the items.
+        /*ArrayQueue queue = new ArrayQueue();
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.dequeue();
+        queue.dequeue();
+        queue.enqueue(40);
+        queue.enqueue(50);
+        queue.enqueue(60);
+        queue.enqueue(70);
+        System.out.println(queue);
+        queue.dequeue();
+        queue.enqueue(80);
+        queue.enqueue(90);*/
+
+        // Building a queue using two stacks
+
+        /* QueueWithTwoStacks queue = new QueueWithTwoStacks();
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.dequeue();
+        queue.dequeue();
+        var first = queue.dequeue();
+        System.out.println(first);*/
+
+        /*PriorityQueue<Integer> queue = new PriorityQueue<>();
+        queue.add(5);
+        queue.add(1);
+        queue.add(3);
+        queue.add(2);
+        while (!queue.isEmpty())
+            System.out.println(queue.remove());*/
+
+
 
 
 
     }
+
+    /*public static void reverse(Queue<Integer> queue){
+        // add
+        // remove
+        // isEmpty
+
+        // Q [10, 20, 30]
+        // S [10, 20, 30]
+
+        //1. Remove the items at the front of the queue and add them in a stack
+        //2. Pop the elements in the stack and and them in the same queue.
+
+        Stack<Integer> stack = new Stack<>();
+
+        while(!queue.isEmpty())
+            stack.push(queue.remove());
+
+        while(!stack.isEmpty())
+            queue.add(stack.pop());
+
+    }*/
 }
