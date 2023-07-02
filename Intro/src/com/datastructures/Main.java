@@ -92,22 +92,31 @@ public class Main {
         //Expression expression = new Expression();
         //System.out.println((expression.isBalanced(str)));
 
-        Stack stack = new Stack();
+        /*Stack stack = new Stack();
         stack.push(5);
         stack.push(45);
         stack.push(35);
         stack.push(55);
-        //stack.pop();
+        System.out.println(stack.pop());
         System.out.println(stack.peek());
-        System.out.println(stack);
+        System.out.println(stack);*/
+
+        // TwoStacks
+
+        TwoStacks twostacks = new TwoStacks(9);
+//        twostacks.push1(1);
+//        twostacks.push1(2);
+//        twostacks.push1(3);
+        twostacks.push2(7);
+        twostacks.push2(8);
+        twostacks.push2(9);
 
 
-
-
-
-
-
-
+        //System.out.println(twostacks.pop1());
+        System.out.println(twostacks.pop2());
+        System.out.println(twostacks.pop2());
+        System.out.println(twostacks.isEmpty2());
+        System.out.println(twostacks);
 
 
 
