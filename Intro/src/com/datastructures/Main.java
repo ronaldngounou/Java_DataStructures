@@ -173,9 +173,16 @@ public class Main {
         while (!queue.isEmpty())
             System.out.println(queue.remove());*/
 
+        PriorityQueue pQueue = new PriorityQueue();
+        pQueue.add(5);
+        pQueue.add(3);
+        pQueue.add(8);
+        pQueue.add(1);
+        pQueue.add(4);
+        System.out.println(pQueue);
 
-
-
+        while(!pQueue.isEmpty())
+            System.out.println(pQueue.remove()); //remove the items by their priority order
 
     }
 
