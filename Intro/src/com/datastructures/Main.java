@@ -103,10 +103,10 @@ public class Main {
 
         // TwoStacks
 
-        TwoStacks twostacks = new TwoStacks(9);
-//        twostacks.push1(1);
-//        twostacks.push1(2);
-//        twostacks.push1(3);
+        /*TwoStacks twostacks = new TwoStacks(9);
+        twostacks.push1(1);
+        twostacks.push1(2);
+        twostacks.push1(3);
         twostacks.push2(7);
         twostacks.push2(8);
         twostacks.push2(9);
@@ -116,7 +116,16 @@ public class Main {
         System.out.println(twostacks.pop2());
         System.out.println(twostacks.pop2());
         System.out.println(twostacks.isEmpty2());
-        System.out.println(twostacks);
+        System.out.println(twostacks);*/
+
+        // MinStack
+
+        MinStack minstack = new MinStack();
+        minstack.push(3);
+        minstack.push(6);
+        minstack.push(9);
+
+        System.out.println(minstack);
 
 
 
