@@ -199,11 +199,34 @@ public class Main {
         System.out.println(queue);*/
 
         //StacksWithTwoQueues
-        StackWithTwoQueues stack = new StackWithTwoQueues();
+        /* StackWithTwoQueues stack = new StackWithTwoQueues();
         stack.push(10);
         stack.push(20);
         stack.push(30);
         System.out.println(stack.pop());
-        System.out.println(stack.peek());
+        System.out.println(stack.peek()); */
+
+        // Working with HashMaps
+        // Key: Employee Number (Integer)
+        // Value: Name (String)
+        /* Map<Integer, String> map = new HashMap<>(); //Map is an interface and HashMap is an implementation of that interface
+        map.put(1, "John");
+        map.put(2, "Marie");
+        map.put(3, "Luc");
+        map.put(3, "Marianne");
+        map.put(null, null); // INTERVIEW: They often ask if hashmaps allow both null key value pairs - the answer is yes.
+        map.remove(null);
+        var value = map.get(3);
+        map.containsKey(3); // O(1) because the hashmap can rely on his hash function to loop up to the item.
+        map.containsValue("Luc");
+
+        for (var item : map.keySet()) // keySet and entrySet returns a list of K V
+            System.out.println(map.get(item));*/
+
+        // Popular interview question - First Non-repeated Character
+        // a green apple
+        String str = "a green apple";
+        CharFinder charFinder = new CharFinder();
+        System.out.println(charFinder.findFirstNonRepeatingChar(str));
     }
 }

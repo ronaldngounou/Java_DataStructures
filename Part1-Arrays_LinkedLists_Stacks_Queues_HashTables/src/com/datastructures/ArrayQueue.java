@@ -59,7 +59,7 @@ public class ArrayQueue {
     }
 
     // Circular Arrays
-    //
+    // We have some space at the front of the queue becaue we removed items.
     // 5 -> 0
     // 6 -> 1
     // 7 -> 2
