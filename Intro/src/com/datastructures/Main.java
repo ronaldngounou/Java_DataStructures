@@ -197,5 +197,13 @@ public class Main {
         queue.add(50);
         QueueReverser.reverse(queue,3);
         System.out.println(queue);*/
+
+        //StacksWithTwoQueues
+        StackWithTwoQueues stack = new StackWithTwoQueues();
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        System.out.println(stack.pop());
+        System.out.println(stack.peek());
     }
 }
