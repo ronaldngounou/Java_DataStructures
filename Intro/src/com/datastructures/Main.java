@@ -81,17 +81,18 @@ public class Main {
         // Write a code to reverse this string. Stacks are useful when I have to do something in reverse or going back.
 
 
-        /*StringReverser reverser = new StringReverser();
-        var result = reverser.reverse(null);
+        // StringReverser reverser = new StringReverser();
+        /*var result = reverser.reverse(null);
         System.out.println(result);*/
 
-        //String str = "(1+3]";
-        // Edge cases
-        // (
-        // (()
-        // ) (
-        //Expression expression = new Expression();
-        //System.out.println((expression.isBalanced(str)));
+        // Check if an expression is balanced.
+        /*String str = "(1+3]";
+         Edge cases
+         (
+         (()
+         ) (
+        Expression expression = new Expression();
+        System.out.println((expression.isBalanced(str)));*/
 
         /*Stack stack = new Stack();
         stack.push(5);
@@ -128,15 +129,15 @@ public class Main {
 
         System.out.println(minstack);*/
 
-        // Intro queues + Popular interview question
-        /*Queue<Integer> queue = new ArrayDeque<>();
+        // Intro queues
+        /* Queue<Integer> queue = new ArrayDeque<>();
         queue.add(10);
         queue.add(20);
-        queue.add(30);*/
+        queue.add(30); */
         // Reversing a queue - Popular interview question.
 
-        //reverse(queue);
-        // System.out.println(queue);
+        /*Queues.reverse(queue);
+        System.out.println(queue);*/
 
         // Popular interview question - Implement a queue using an array to store the items.
         /*ArrayQueue queue = new ArrayQueue();
@@ -173,7 +174,8 @@ public class Main {
         while (!queue.isEmpty())
             System.out.println(queue.remove());*/
 
-        PriorityQueue pQueue = new PriorityQueue();
+        // Building a priority queue using an array
+        /*PriorityQueue pQueue = new PriorityQueue();
         pQueue.add(5);
         pQueue.add(3);
         pQueue.add(8);
@@ -184,26 +186,16 @@ public class Main {
         while(!pQueue.isEmpty())
             System.out.println(pQueue.remove()); //remove the items by their priority order
 
-    }
-
-    /*public static void reverse(Queue<Integer> queue){
-        // add
-        // remove
-        // isEmpty
-
-        // Q [10, 20, 30]
-        // S [10, 20, 30]
-
-        //1. Remove the items at the front of the queue and add them in a stack
-        //2. Pop the elements in the stack and and them in the same queue.
-
-        Stack<Integer> stack = new Stack<>();
-
-        while(!queue.isEmpty())
-            stack.push(queue.remove());
-
-        while(!stack.isEmpty())
-            queue.add(stack.pop());
-
     }*/
+
+        // QueueReverser
+        /*Queue<Integer> queue = new ArrayDeque<>();
+        queue.add(10);
+        queue.add(20);
+        queue.add(30);
+        queue.add(40);
+        queue.add(50);
+        QueueReverser.reverse(queue,3);
+        System.out.println(queue);*/
+    }
 }

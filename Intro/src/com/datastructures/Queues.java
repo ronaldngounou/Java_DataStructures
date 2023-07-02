@@ -14,7 +14,7 @@ public class Queues {
         // S [10, 20, 30]
 
         //1. Remove the items at the front of the queue and add them in a stack
-        //2. Pop the elements in the stack and and them in the same queue.
+        //2. Pop the elements in the stack and add them in the same queue.
 
         Stack<Integer> stack = new Stack<>();
 
@@ -25,5 +25,6 @@ public class Queues {
             queue.add(stack.pop());
 
     }
+
 
 }
