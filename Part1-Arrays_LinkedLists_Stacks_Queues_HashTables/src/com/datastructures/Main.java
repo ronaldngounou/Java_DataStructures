@@ -224,9 +224,45 @@ public class Main {
             System.out.println(map.get(item));*/
 
         // Popular interview question - First Non-repeated Character
-        // a green apple
-        String str = "a green apple";
+        /* String str = "a green apple";
         CharFinder charFinder = new CharFinder();
-        System.out.println(charFinder.findFirstNonRepeatingChar(str));
+        System.out.println(charFinder.findFirstNonRepeatingChar(str)); */
+
+        // Maps: k -> v
+        // Sets: k     Don't allow duplicates keys
+        /*Set<Integer> set = new HashSet<>();
+        int[] numbers = {1, 2, 2, 3, 3, 2, 1, 5, 4};
+        for (var number : numbers)
+            set.add(number);
+        System.out.println(set);*/
+
+        // Popular interview question - Find the first repeated character in a string
+        /*CharFinder finder = new CharFinder();
+        finder.findFirstRepeatedChar("a green apple");*/
+
+        // Hash functions
+        // items[1] = "Mosh"
+        // 100
+        // 0-99
+        /*Map<String, String> map = new HashMap<>();
+        map.put("123456-A", "Mosh");
+        System.out.println(hash("123456-A"));*/
+
+        // Implement a hash table to store key value pairs. Collisions should be solved using chaining.
+        /*HashTable table = new HashTable();
+        table.put(6,"A"); //remainder=1
+        table.put(8, "B"); //remainder=3
+        table.put(11, "C"); //remainder=11%5=1
+        table.put(11, "C+");
+        System.out.println(table.get(11));
+        table.remove(16);
+        System.out.println("Done");*/
+
+        // Most Frequent Character in an array
+        HashTableExercises hash = new HashTableExercises();
+        int[] array = {0, 0, 0, 1};
+        System.out.println("The most frequent number is " + hash.mostFrequent(array));
+
     }
+
 }

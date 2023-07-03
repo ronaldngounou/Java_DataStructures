@@ -19,7 +19,7 @@ public class PriorityQueue {
 
         //Shifting items
         int i;
-        for(i=count-1; i>=0; i--){
+        for(i=count-1; i>=0; i--){ //Tip: iterate the array fron the end so we don't loose elements.
             if (items[i] > item)
                 items[i+1] = items[i];
             else
