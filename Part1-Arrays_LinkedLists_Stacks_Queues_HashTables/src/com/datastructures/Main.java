@@ -260,11 +260,13 @@ public class Main {
 
         // Most Frequent Character in an array
         HashTableExercises hash = new HashTableExercises();
-        int[] array = {1, 7, 5, 9, 2, 12, 3};
+        int[] array = {2, 7, 11, 15};
         //System.out.println("The most frequent number is " + hash.mostFrequent(array));
 
-        System.out.println(hash.countPairsWithDiff(array, 2));
+        //System.out.println(hash.countPairsWithDiff(array, 2));
+        int[] result = hash.twoSum(array, 9);
 
+        System.out.println(Arrays.toString(result));
 
     }
 

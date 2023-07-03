@@ -1,9 +1,6 @@
 package com.datastructures;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Hashtable;
-import java.util.Map;
+import java.util.*;
 
 public class HashTableExercises {
 
@@ -75,4 +72,27 @@ public class HashTableExercises {
         if (numbers.length==0)
             throw new IllegalStateException("Array is empty.");
     }
+
+
+
+    public int[] twoSum(int[] numbers, int target){
+        // Input [2, 7, 11, 15] target=9
+        // 2 : 0
+        // Use a hashtable to store the numbers and their indexes.
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i<numbers.length; i++){
+            int complement = target - numbers[i];
+            if (map.containsKey(complement))
+                return new int[]{map.get(complement), i};
+
+            map.put(numbers[i], i);
+
+        }
+
+
+        return null;
+
+    }
+
+
 }
